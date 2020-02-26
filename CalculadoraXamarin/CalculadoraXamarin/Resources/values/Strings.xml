@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">CalculadoraXamarin</string>
     <string name="action_settings">Settings</string>
+  <string-array name="ItensLista">
+    <item>Polegadas/Centímetros</item>
+    <item>Centímetros/Polegadas</item>
+    <item>Milhas/Quilômetros</item>
+    <item>Quilômetros/Milhas</item>
+  </string-array>
 </resources>
