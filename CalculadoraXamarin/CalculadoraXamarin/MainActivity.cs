@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using System;
 
 namespace CalculadoraXamarin
 {
@@ -95,82 +96,101 @@ namespace CalculadoraXamarin
         }
         private void OnteclaConversao(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaConversao(intOpcaoConversao);
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaFatorial(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaFatorial();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaTangente(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaTangente();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaCosseno(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaCosseno();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaSeno(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaSeno();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaRaizQuadrada(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaRaizQuadrada();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaElevarQuadrado(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaElevarQuadrado();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaLimparC(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaLimparC();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaLimparCE(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaLimparCE();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaDividir(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaDivisao();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaMultiplicar(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaMultiplicacao();
+              txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaSubtrair(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaSubtracao();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaSomar(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaAdicao();
+              txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaIgual(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaIgual();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaVirgula(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            calculadora.TeclaVirgula();
+            txtVisor.Text = calculadora.ValorVisor;
         }
 
         private void OnTeclaNumeros(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+            Button btnTecla = (Button)sender;
+            string strTecla = btnTecla.Text;
+            double dblNumero = Convert.ToDouble(strTecla);
+            calculadora.TeclaNumeros(dblNumero);
+            txtVisor.Text = calculadora.ValorVisor;
         }
     }
 }
