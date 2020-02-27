@@ -96,101 +96,82 @@ namespace CalculadoraXamarin
         }
         private void OnteclaConversao(object sender, System.EventArgs e)
         {
-            calculadora.TeclaConversao(intOpcaoConversao);
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaFatorial(object sender, System.EventArgs e)
         {
-            calculadora.TeclaFatorial();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaTangente(object sender, System.EventArgs e)
         {
-            calculadora.TeclaTangente();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaCosseno(object sender, System.EventArgs e)
         {
-            calculadora.TeclaCosseno();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaSeno(object sender, System.EventArgs e)
         {
-            calculadora.TeclaSeno();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaRaizQuadrada(object sender, System.EventArgs e)
         {
-            calculadora.TeclaRaizQuadrada();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaElevarQuadrado(object sender, System.EventArgs e)
         {
-            calculadora.TeclaElevarQuadrado();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaLimparC(object sender, System.EventArgs e)
         {
-            calculadora.TeclaLimparC();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaLimparCE(object sender, System.EventArgs e)
         {
-            calculadora.TeclaLimparCE();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaDividir(object sender, System.EventArgs e)
         {
-            calculadora.TeclaDivisao();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaMultiplicar(object sender, System.EventArgs e)
         {
-            calculadora.TeclaMultiplicacao();
-              txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaSubtrair(object sender, System.EventArgs e)
         {
-            calculadora.TeclaSubtracao();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaSomar(object sender, System.EventArgs e)
         {
-            calculadora.TeclaAdicao();
-              txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaIgual(object sender, System.EventArgs e)
         {
-            calculadora.TeclaIgual();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaVirgula(object sender, System.EventArgs e)
         {
-            calculadora.TeclaVirgula();
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
 
         private void OnTeclaNumeros(object sender, System.EventArgs e)
         {
-            Button btnTecla = (Button)sender;
-            string strTecla = btnTecla.Text;
-            double dblNumero = Convert.ToDouble(strTecla);
-            calculadora.TeclaNumeros(dblNumero);
-            txtVisor.Text = calculadora.ValorVisor;
+            throw new System.NotImplementedException();
         }
     }
 }
