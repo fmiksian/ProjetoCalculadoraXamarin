@@ -45,7 +45,7 @@ namespace CalculadoraXamarin
         private void ConverterValor()
         {
 
-            strValorVisor = String.Format(new CultureInfo("pr-BR"), "{0:0:00}", dblValorVisor);
+            strValorVisor = String.Format(new CultureInfo("pt-BR"), "{0:0.00}", dblValorVisor);
         }
 
         private void Inicializar()
@@ -114,8 +114,8 @@ namespace CalculadoraXamarin
                         if (dblOperando2 > 0.0)
                             dblResultado = dblOperando1 / dblOperando2;
                         break;
-                    case 'X':
-                        dblResultado = dblOperando1 - dblOperando2;
+                    case 'x':
+                        dblResultado = dblOperando1 * dblOperando2;
                         break;
                     case '-':
                         dblResultado = dblOperando1 - dblOperando2;
@@ -140,7 +140,7 @@ namespace CalculadoraXamarin
 
         public void TeclaMultiplicacao()
         {
-            chrOperador = 'X';
+            chrOperador = 'x';
             TeclaIgual();
             blnOperador = true;
         }
